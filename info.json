@@ -1,0 +1,136 @@
+{
+    "meta": {
+      "title": "Iván Lado - Portfolio",
+      "favicon": "favicon.png"
+    },
+    "social": {
+      "github": {
+        "url": "https://github.com/ivanlado",
+        "icon": "fab fa-github"
+      },
+      "website": {
+        "url": "https://yourwebsite.com",
+        "icon": "fas fa-globe"
+      },
+      "email": {
+        "address": "ivanladoc01@gmail.com",
+        "icon": "fas fa-envelope"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/ivanlado",
+        "icon": "fab fa-linkedin-in"
+      }
+    },
+    "profile": {
+      "name": "Iván Lado Canosa",
+      "title": "Informatics Engineering and Mathematics student",
+      "subtitle": "Master in Statistical Techniques student",
+      "image": "img/me.jpg",
+      "resume": "docs/resume.txt"
+    },
+    "about": {
+      "content": "I am studying a double degree in Computer Engineering and Mathematics, as well as a Master in Statistical Techniques. I am a person passionate about technology, eager for action and constantly learning. Throughout my training, I have studied Machine Learning, Deep Learning and Statistics both self-taught and through various internships in companies."
+    },
+    "education": [
+      {
+        "degree": "Double bachelor's degree in Informatics Engineering and Mathematics",
+        "institution": "Universidad de Santiago de Compostela, Spain",
+        "startDate": "September 2019",
+        "endDate": "July 2025",
+        "credits": "372 credits ECTS",
+        "gpa": "9.0004/10",
+        "details": [
+          {
+            "title": "Informatics Engineering Thesis",
+            "description": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture (using Pytorch)."
+          },
+          {
+            "title": "Mathematics Thesis",
+            "description": "Introduction to time series models."
+          }
+        ]
+      },
+      {
+        "degree": "Masters's degree in Statistical Methods",
+        "institution": "Universidade da Coruña, Spain",
+        "startDate": "September 2024",
+        "endDate": "February 2026",
+        "credits": "90 credits ECTS",
+        "gpa": "9.0200/10",
+        "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, or spatial statistics."
+      }
+    ],
+    "experience": [
+      {
+        "title": "CiTIUS Summer Fellowships",
+        "position": "Research Fellow",
+        "startDate": "July 2023",
+        "endDate": "July 2023",
+        "logo": "img/citius-logo.jpg",
+        "description": "Involved in a project that aimed to predict and classify a heart illness among healthy patients. An RNN with an attention model was used to approach it.",
+        "responsibilities": [
+          "Developed an AI model for heart disease classification.",
+          "Implemented RNNs with an attention mechanism.",
+          "Engaged in research paper analysis for model improvement."
+        ],
+        "skills": ["RNNs", "TensorFlow", "Python", "Research"]
+      },
+      {
+        "title": "Data Analyst Intern",
+        "position": "Intern",
+        "startDate": "August 2023",
+        "endDate": "August 2023",
+        "logo": "img/minsait-logo.png",
+        "description": "Strengthened my foundations in ML by an in-depth whole read of \"Introduction to Statistical Learning\" (Hastie's book) and subsequently employed this knowledge to construct a model for predicting housing prices in my city.",
+        "responsibilities": [
+          "Studied statistical learning concepts for ML applications.",
+          "Developed a housing price prediction model.",
+          "Utilized PowerBI and Streamlit for data visualization."
+        ],
+        "skills": ["Machine Learning", "PowerBI", "Streamlit", "ChatGPT API", "Python"]
+      },
+      {
+        "title": "Data Engineer Intern",
+        "position": "Intern",
+        "startDate": "June 2024",
+        "endDate": "August 2024",
+        "logo": "img/fds-logo.jpg",
+        "description": "Completed a Data Engineering project from start to finish, gaining expertise in data ingestion and transformation, data modeling, and visualization tools.",
+        "responsibilities": [
+          "Designed and implemented a data pipeline.",
+          "Worked with Snowflake for efficient data management.",
+          "Created interactive dashboards using PowerBI and Streamlit."
+        ],
+        "skills": ["SQL", "Data Engineering", "Snowflake", "PowerBI", "Streamlit", "Python"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture",
+        "image": "img/tfg-info-1.png",
+        "carousel": ["img/tfg-info-1.png"],
+        "description": "My Informatics Engineering Bachelor's Thesis focused on optimizing semantic segmentation for land cover images. I explored various encoder-decoder architectures to maximize segmentation quality. Additionally, I optimized computational efficiency by improving training and inference times, particularly in a multi-GPU setting. By leveraging reduced float precision, I achieved a 2x speedup without compromising accuracy. I also analyzed quantization models as a potential avenue for future improvements.",
+        "skills": ["PyTorch", "Computer Vision", "Semantic segmentation", "HPC", "Deep Learning"]
+      },
+      {
+        "title": "Google Calendar Report",
+        "image": "img/calendar-report.png",
+        "carousel": ["img/calendar-report.png"],
+        "description": "Developed a solution using Python, Google API, and Power BI to automate the extraction and visualization of Google Calendar events. The project aimed to provide insights into the time spent on different activities and improve time management.",
+        "skills": ["Python", "Google Cloud", "Google Calendar API", "PowerBI"]
+      },
+      {
+        "title": "EA FC 25 squad builder (using ILP)",
+        "image": "img/eafc25-1.png",
+        "carousel": ["img/eafc25-1.png"],
+        "description": "Developed and solved and optimizacion problem to choose the best squad for EA FC 25 Ultimate Teams, given price and chemistry constraints.",
+        "skills": ["Integer and Linear Programming", "AMPL", "Python"]
+      }
+      
+      
+    ],
+    "footer": {
+      "repositoryLink": "https://github.com/mmacneil/devfolio",
+      "repositoryName": "devfolio"
+    }
+  }
