@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ivanlado.github.io/static/css/main.ac0b6d3f.css",
+    "main.js": "/ivanlado.github.io/static/js/main.67e197c5.js",
+    "static/js/453.97724c26.chunk.js": "/ivanlado.github.io/static/js/453.97724c26.chunk.js",
+    "index.html": "/ivanlado.github.io/index.html",
+    "main.ac0b6d3f.css.map": "/ivanlado.github.io/static/css/main.ac0b6d3f.css.map",
+    "main.67e197c5.js.map": "/ivanlado.github.io/static/js/main.67e197c5.js.map",
+    "453.97724c26.chunk.js.map": "/ivanlado.github.io/static/js/453.97724c26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac0b6d3f.css",
+    "static/js/main.67e197c5.js"
+  ]
+}
