@@ -1,38 +1,106 @@
-.App {
+:root {
+  /* Primary Colors */
+  --color-primary: #1E3A8A;       /* Deep Blue */
+  --color-primary-light: #0899f4; /* Brighter Blue for hover/accents */
+  --color-secondary: #23d5ab;     /* Green accent */
+  --color-accent: #FACC15;        /* Yellow highlight */
+
+  /* Background & Surface */
+  --color-bg: #F9FAFB;            /* Light gray background */
+  --color-card-bg: #FFFFFF;       /* White card background */
+
+  /* Text */
+  --color-text: #111827;          /* Dark gray / black for main text */
+  --color-subtext: #6B7280;       /* Medium gray for secondary info */
+  --color-text-inverse: #FFFFFF;  /* White text for dark backgrounds */
+
+  /* Border / Divider */
+  --color-border: #E5E7EB;        /* Light gray for borders */
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+
+
+/* Apply fonts */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-weight: 600; /* or 700 for bolder titles */
+  color: var(--color-text);
+}
+
+p, span, a, li {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h3{
+  line-height: 1.15;
+}
+
+h6{
+  color: var(--color-subtext);
+}
+
+
+.button {
+  background-image: linear-gradient(45deg, var(--color-secondary), var(--color-primary-light));
+  color: var(--color-card-bg);
+  width: 30%;
+  padding: 0.4rem 0.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
   text-align: center;
+  border: 1px solid var(--color-primary);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover {
+  transform: translateY(-2px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button:active {
+  transform: translateY(0px);
+  background-color: #1E3A8A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.labels-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  background-color: #E5E7EB; /* light gray */
+  color: #6B7280; /* subtext gray */
+  padding: 0.1rem 0.5rem;
+  border-radius: 0rem;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.project-card-image{
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
+
+

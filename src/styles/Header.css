@@ -1,0 +1,54 @@
+.header-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-is-128x128 {
+    height: 128px;
+    width: 128px;
+}
+
+.header-image{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.header-is-rounded {
+    border-radius: 9999px;
+}
+
+
+.header-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: var(--color-text-inverse);
+}
+
+
+
+
+
+
+header{
+    background: linear-gradient(-45deg, #23d5ab,  var(--color-primary-light));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
