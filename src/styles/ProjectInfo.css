@@ -16,7 +16,7 @@
     background: white;
     border-radius: 10px;
     width: 70%;
-    height: 95vh;
+    max-height: 95vh;
     display: flex;
     flex-direction: column;
     overflow: hidden; /* hide overflow for header/footer */
@@ -88,9 +88,9 @@
 
 .carousel-image {
     width: 90%; /* full width of modal content */
-    height: auto; /* preserve aspect ratio */
+    max-height: 60vh; /* max 70 */
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .carousel-btn {

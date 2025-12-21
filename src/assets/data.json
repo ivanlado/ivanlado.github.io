@@ -38,16 +38,17 @@
             "startDate": "September 2019",
             "endDate": "July 2025",
             "credits": "372 credits ECTS",
-            "gpa": "9.0004/10",
+            "gpa": "9.20/10 and 9.00/10 respectively.",
             "details": [
                 {
                     "title": "Informatics Engineering Thesis",
-                    "description": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture (using Pytorch).",
+                    "description": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture.",
                     "more": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture"
                 },
                 {
                     "title": "Mathematics Thesis",
-                    "description": "Introduction to time series models."
+                    "description": "Introduction to time series models.",
+                    "more": "Introduction to time series models"
                 }
             ]
         },
@@ -57,45 +58,55 @@
             "startDate": "September 2024",
             "endDate": "February 2026",
             "credits": "90 credits ECTS",
-            "gpa": "9.0200/10",
-            "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, or spatial statistics."
+            "gpa": "9.30/10",
+            "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, or spatial statistics.",
+            "details": [
+                {
+                    "title": "Master Thesis: Analysis of retail processes and diagnosis of coordinated forecasting needs, at Inditex",
+                    "description": "Retail process analysis and forecasting using statistical and machine learning methods."
+                }
+            ]
         }
     ],
     "experience": [
         {
+            "title": "Data Scientist Intern",
+            "position": "Intern",
+            "company": "Inditex",
+            "startDate": "September 2025",
+            "endDate": "February 2026",
+            "logo": "./assets/images/inditex_logo.jpg",
+            "description": "Doing my master's thesis: Retail process analysis and forecasting using statistical and machine learning methods.",
+            "responsibilities": [],
+            "skills": [
+                "Machine Learning",
+                "Bussiness Analysis",
+                "Statistics",
+                "Snowflake",
+                "Databricks",
+                "Python",
+                "PySpark"
+            ]
+        },
+        {
             "title": "CiTIUS Summer Fellowships",
             "position": "Research Fellow",
             "company": "CiTIUS, USC research center",
-            "startDate": "July 2023",
-            "endDate": "July 2023",
+            "startDate": "July 2025",
+            "endDate": "July 2025",
             "logo": "./assets/images/citius-logo.jpg",
-            "description": "Involved in a project that aimed to predict and classify a heart illness among healthy patients. An RNN with an attention model was used to approach it.",
-            "responsibilities": [
-                "Developed an AI model for heart disease classification.",
-                "Implemented RNNs with an attention mechanism.",
-                "Engaged in research paper analysis for model improvement."
-            ],
-            "skills": ["RNNs", "TensorFlow", "Python", "Research"]
-        },
-        {
-            "title": "Data Analyst Intern",
-            "position": "Intern",
-            "company": "Minsait, an Indra company",
-            "startDate": "August 2023",
-            "endDate": "August 2023",
-            "logo": "./assets/images/minsait-logo.png",
-            "description": "Strengthened my foundations in ML by an in-depth whole read of \"Introduction to Statistical Learning\" (Hastie's book) and subsequently employed this knowledge to construct a model for predicting housing prices in my city.",
-            "responsibilities": [
-                "Studied statistical learning concepts for ML applications.",
-                "Developed a housing price prediction model.",
-                "Utilized PowerBI and Streamlit for data visualization."
-            ],
+            "description": "Involved in a project targeting anomaly detection and missing values imputation within the field of process mining. Designed and evaluated hybrid deep learning models with variational autoencoders and normalizing flows for event log reconstruction.",
+            "responsibilities": [],
             "skills": [
-                "Machine Learning",
-                "PowerBI",
-                "Streamlit",
-                "ChatGPT API",
-                "Python"
+                "PyTorch",
+                "Python",
+                "Anomaly Detection",
+                "Missing Data Imputation",
+                "Process Mining",
+                "Variational Autoencoders",
+                "Normalizing Flows",
+                "Deep Learning",
+                "Research"
             ]
         },
         {
@@ -119,35 +130,396 @@
                 "Streamlit",
                 "Python"
             ]
+        },
+        {
+            "title": "Data Analyst Intern",
+            "position": "Intern",
+            "company": "Minsait, an Indra company",
+            "startDate": "August 2023",
+            "endDate": "August 2023",
+            "logo": "./assets/images/minsait-logo.png",
+            "description": "Strengthened my foundations in ML by an in-depth whole read of \"Introduction to Statistical Learning\" (Hastie's book) and subsequently employed this knowledge to construct a model for predicting housing prices in my city.",
+            "responsibilities": [
+                "Studied statistical learning concepts for ML applications.",
+                "Developed a housing price prediction model.",
+                "Utilized PowerBI and Streamlit for data visualization."
+            ],
+            "skills": [
+                "Machine Learning",
+                "PowerBI",
+                "Streamlit",
+                "ChatGPT API",
+                "Python"
+            ],
+            "repo": "https://github.com/ivanlado/coruna-real-estate-market"
+        },
+        {
+            "title": "CiTIUS Summer Fellowships",
+            "position": "Research Fellow",
+            "company": "CiTIUS, USC research center",
+            "startDate": "July 2023",
+            "endDate": "July 2023",
+            "logo": "./assets/images/citius-logo.jpg",
+            "description": "Involved in a project that aimed to predict and classify a heart illness among healthy patients. An RNN with an attention model was used to approach it.",
+            "responsibilities": [
+                "Developed an AI model for heart disease classification.",
+                "Implemented RNNs with an attention mechanism.",
+                "Engaged in research paper analysis for model improvement."
+            ],
+            "skills": [
+                "RNNs",
+                "TensorFlow",
+                "Python",
+                "Deep Learning",
+                "Research"
+            ]
         }
     ],
     "projects": [
         {
             "title": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture",
             "image": "./assets/images/tfg-info-1.png",
-            "carousel": ["./assets/images/tfg-info-1.png"],
-            "description": "My Informatics Engineering Bachelor's Thesis focused on optimizing semantic segmentation for land cover images. I explored various encoder-decoder architectures to maximize segmentation quality. Additionally, I optimized computational efficiency by improving training and inference times, particularly in a multi-GPU setting. By leveraging reduced float precision, I achieved a 2x speedup without compromising accuracy. I also analyzed quantization models as a potential avenue for future improvements.",
-            "objectives": [
-                "Explore and implement encoder-decoder architectures for semantic segmentation of land cover images.",
-                "Optimize training and inference times using multi-GPU setups and reduced float precision.",
-                "Evaluate the impact of quantization models on segmentation performance."
+            "carousel": [
+                "./assets/images/tfg-info-1.png"
             ],
+            "description": "My Informatics Engineering Bachelor's Thesis focused on semantic segmentation of multispectral land cover images using encoder-decoder neural network architectures. I explored various deep encoder-decoder architectures to maximize segmentation quality. Additionally, I optimized computational efficiency by improving training and inference times, particularly in a multi-GPU setting. By leveraging reduced float precision, I achieved a 2x speedup without compromising accuracy. I also analyzed quantization models as a potential avenue for future improvements.",
+            "objectives": [
+                "Adapt semantic segmentation models of land cover images to large datasets, ensuring computationally efficient training",
+                "Analyze parallel execution of segmentation code in multiGPU architectures",
+                "Evaluate the effectiveness of different encoder-decoder architectures on large multispectral land cover datasets",
+                "Compare segmentation results with those reported in the literature"
+            ],
+            "results": [
+                "MobileNetV2dilated + PPM deepsup achieved the best balance between accuracy and efficiency, with OA 85.6%, mIOU 49.0%, and mF1 61.3%",
+                "ResNet50dilated + PPM deepsup obtained similar accuracy but required longer training time",
+                "Mixed precision training reduced training time per epoch by more than half without loss of accuracy",
+                "Inference with mixed precision reached up to 2.53x speedup with no quality degradation"
+            ],
+            "features": [
+                "Training and inference using mixed precision (AMP-FP16)",
+                "MultiGPU parallelism with PyTorch DistributedDataParallel (DDP)",
+                "Evaluation of five encoder-decoder models on a large-scale dataset",
+                "Integration of synchronized batch normalization for small batch sizes",
+                "Benchmarking against state-of-the-art methods on Five-Billion-Pixels dataset"
+            ],
+            "challenges": [
+                "Optimizing training across multiple GPUs and nodes",
+                "Original code had inefficient GPU utilization due to images of different sizes being processed simultaneously, causing synchronization delays and limiting training speedup to under 1.4× with 2 GPUs. The issue came from assuming thread execution order at the core level.",
+                "The PyTorch version used had a defective queue wrapper that triggered synchronization errors during training, requiring a custom workaround to ensure stability."
+            ],
+            "learnt-lessons": [
+                "Mixed precision results in faster training and inference with no accuracy loss.",
+                "DistributedDataParallel (DDP) scales better than DataParallel (DP) in multiGPU setups",
+                "Batch size has a strong impact on both computational cost and segmentation quality",
+                "Encoder-decoder architectures can achieve state-of-the-art results on land cover segmentation"
+            ],
+            "skills": [
+                "BSc Thesis",
+                "PyTorch",
+                "Computer Vision",
+                "Semantic segmentation",
+                "HPC",
+                "Deep Learning",
+                "MultiGPU training",
+                "Mixed precision training",
+                "Distributed systems"
+            ]
+        },
+        {
+            "title": "Twitch Data Analysis (Internship at FDS)",
+            "image": "./assets/images/fds/fds4.png",
+            "carousel": [
+                "./assets/images/fds/fds4.png",
+                "./assets/images/fds/fds1.png",
+                "./assets/images/fds/fds2.png",
+                "./assets/images/fds/fds3.png",
+                "./assets/images/fds/fdsetl.png",
+                "./assets/images/fds/fdspredstreamlit.png",
+                "./assets/images/fds/fdskanvan.png"
+            ],
+            "description": "Worked on a complete data engineering project using real Twitch data. The idea was to figure out the best moments and conditions to place ads on the platform. It was my first chance to go through the whole data lifecycle: from raw data to insights and even predictive models.",
+            "objectives": [],
+            "results": [
+                "Built a dimensional model in Snowflake and automated the ETL process.",
+                "Created dashboards in Power BI showing traffic, audience trends, and engagement.",
+                "Cleaned and standardized messy Twitch game names with TF-IDF and Levenshtein distance.",
+                "Developed predictive models using Facebook Prophet and a recurrent neural network."
+            ],
+            "features": [],
+            "challenges": [
+                "Dealing with inconsistent and messy raw data.",
+                "Designing and building dashboards that were clear but still detailed, so that consumers could easily find insights.",
+                "Understanding how to design processes that actually scale."
+            ],
+            "learnt-lessons": [
+                "Always define the right metrics before starting to build visualizations.",
+                "Data quality matters more than fancy models (garbage in, garbage out).",
+                "Feedback from more experienced teammates is gold — it saves you weeks of trial and error.",
+                "Agile methods like Kanban make it easier to stay organized and avoid stress.",
+                "Teamwork and communication are just as important as technical skills."
+            ],
+            "skills": [
+                "SQL",
+                "Snowflake",
+                "ETL & Data Modeling",
+                "Power BI",
+                "Python",
+                "Streamlit",
+                "Agile (Kanban, Jira, Teams)"
+            ]
+        },
+        {
+            "title": "Introduction to time series models",
+            "image": "./assets/images/tfgmates.png",
+            "carousel": [],
+            "description": "My Mathematics Bachelor's Thesis deals with the analysis of time series from a classical statistical perspective, considering that the observed series are realisations of stochastic processes. Autoregressive (AR), moving average (MA), mixed (ARMA), integrated (ARIMA) and seasonal (SARIMA) models are presented in detail, explaining their mathematical formulation, parameter estimation methods and associated forecasting techniques. A methodology for time series analysis is also proposed, which will be used in the analysis of two real time series. In addition, a simulation study is included to illustrate and evaluate the estimation and forecasting processes of the models.",
+            "objectives": [],
             "results": [],
             "features": [],
             "challenges": [],
             "learnt-lessons": [],
             "skills": [
-                "PyTorch",
-                "Computer Vision",
-                "Semantic segmentation",
-                "HPC",
-                "Deep Learning"
+                "BSc Thesis",
+                "Time series analysis",
+                "Statistics",
+                "R"
             ]
         },
         {
+            "title": "Wine Production Forecast",
+            "image": "assets/images/datathoncajamar.jpg",
+            "carousel": [
+                "assets/images/datathoncajamar.jpg"
+            ],
+            "description": "This project was part of a Datathon. The objective was  to predict wine production for a Spanish cooperative using historical vineyard and meteorological data. The goal was to estimate the harvest months in advance.",
+            "results": [
+                "Identified key variables and handled missing data using advanced imputation (MICE).",
+                "Achieved improved prediction accuracy with ensemble models and feature engineering.",
+                "Best local team in the Datathon (the best in our University)."
+            ],
+            "features": [
+                "Exploratory data analysis and visualization of categorical and continuous variables.",
+                "Advanced missing data imputation strategies.",
+                "Feature engineering to aggregate weather data by month and campaign.",
+                "Modeling with XGBoost, RandomForest, Linear Regression or Neural Nets."
+            ],
+            "challenges": [
+                "High proportion of missing or zero values in key variables (e.g., surface area).",
+                "Temporal constraints: only pre-July meteorological data could be used for prediction."
+            ],
+            "skills": [
+                "Data Science",
+                "Machine Learning models",
+                "Python",
+                "Pandas",
+                "Scikit-learn",
+                "Data Visualization",
+                "Feature Engineering"
+            ]
+        },
+        {
+            "title": "Data Analytics Internship at Minsait (Indra)",
+            "image": "./assets/images/minsaitproject1.png",
+            "carousel": [
+                
+            ],
+            "objectives": [
+                "Adquire real data about rental prices in my city.",
+                "Develop a model to predict rental prices based on various features."
+            ],
+            "results": [
+                "Created a PostgreSQL relational database to store housing data",
+                "Developed multiple predictive models (linear regression, random forest, xgboost, neural networks, SVM, lasso, etc.)",
+                "Identified lasso linear regression as the best-performing model based on RMSE",
+                "Designed a dashboard and an interactive application with Streamlit and Power BI"
+            ],
+
+
+            "skills": [
+                "SQL",
+                "PostgreSQL",
+                "Power BI",
+                "Python",
+                "Machine Learning",
+                "Linear and Regularized Regression",
+                "Streamlit"
+            ],
+            "repo": "",
+            "moreInfoLink": ""
+        },
+        {
+            "title": "EA FC 25 squad builder (using ILP)",
+            "image": "./assets/images/eafc25-1.png",
+            "carousel": [
+                "./assets/images/eafc25-1.png", "./assets/images/eafc25formulation.png"
+            ],
+            "description": "Developed and solved and optimizacion problem to choose the best squad for EA FC 25 Ultimate Teams, given price and chemistry constraints.",
+            "skills": [
+                "Integer and Linear Programming",
+                "AMPL",
+                "Python"
+            ]
+        },
+        {
+            "title": "Inditex Optimization Challenge",
+            "image": "./assets/images/inditex25.png",
+            "carousel": [
+                "./assets/images/optimizacioninditexformulation.png"
+            ],
+            "description": "Optimization challenge to design a production schedule for a factory with multiple machines and item types, maximizing profit or minimizing makespan under real-world constraints. The project involves mathematical modeling, constraint programming, and the use of AMPL for industrial-scale scheduling.",
+            "objectives": [
+                "Model a real-world factory production scheduling problem as a mathematical optimization problem.",
+                "Maximize profit or minimize total production time (makespan) while meeting all item demands and machine constraints.",
+                "Implement and solve the model using AMPL syntax."
+            ],
+            "skills": [
+                "Optimization",
+                "AMPL",
+                "Mixed Integer Linear Programming",
+                "Python",
+                "Scheduling",
+                "Operations Research"
+            ],
+            "repo": "https://github.com/ivanlado/inditex-workshop-2025"
+        },
+        {
+            "title": "Fun Coruña webpage",
+            "image": "./assets/images/funcoruna.png",
+            "carousel": [],
+            "description": "Fun Coruña is a fictional web project developed for the Web Development course in the Computer Engineering degree program. It is a platform designed to promote and manage events in the city of A Coruña, offering services tailored to both individuals and businesses.",
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "Web Development",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "jQuery",
+                "AJAX"
+            ],
+            "repo": "https://github.com/ivanlado/fun-coruna-website",
+            "live": "https://ivanlado.github.io/fun-coruna-website/",
+            "moreInfoLink": "https://github.com/ivanlado/fun-coruna-website#readme"
+        },
+        {
+            "title": "PDF cropper",
+            "image": "./assets/images/croper.png",
+            "carousel": [],
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "Python"
+            ],
+            "repo": "https://github.com/ivanlado/pdf-tools",
+            "moreInfoLink": "https://github.com/ivanlado/pdf-tools#readme"
+        },
+        {
+            "title": "Messenger P2P with Java RMI",
+            "image": "./assets/images/p2p/p2p chat.png",
+            "carousel": [
+                "./assets/images/p2p/p2p chat.png", "./assets/images/p2p/p2p login.png", "./assets/images/p2p/p2p requests.png"
+            ],
+            "description": "Distributed instant messaging system developed for the Distributed Computing University course. Built with Java RMI using a peer-to-peer (P2P) architecture. The server handles client presence and notifications, while messages are exchanged directly between clients. Includes a rudimentary GUI and extended features such as authentication, dynamic friend management, and database persistence.",
+            "objectives": [
+                "Design and implement a distributed system using Java RMI.",
+                "Implement a server to manage connections, presence notifications, and user registration.",
+                "Develop a peer-to-peer (P2P) messaging system where communication occurs directly between clients.",
+                "Provide a rudimentary GUI for message exchange and user interactions."
+            ],
+            "skills": [
+                "Java",
+                "Java RMI",
+                "Swing",
+                "Distributed systems",
+                "SQL"
+            ],
+            "repo": ""
+        },
+        {
+            "title": "D Lexical Analyzer",
+            "carousel": [],
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "C",
+                "Compilers"
+            ],
+            "repo": "https://github.com/ivanlado/calculator-interpreter",
+            "moreInfoLink": "https://github.com/ivanlado/calculator-interpreter#readme"
+        },
+        {
+            "title": "Calculator Interpreter in C",
+            "carousel": [],
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "C",
+                "Compilers",
+                "Interpreter"
+            ],
+            "repo": "https://github.com/ivanlado/analizadorLexicoFlexD",
+            "moreInfoLink": "https://github.com/ivanlado/analizadorLexicoFlexD#readme"
+        },
+        {
+            "title": "Webpage prototype",
+            "image": "./assets/images/acabaile/acabaile.png",
+            "carousel": [
+                "./assets/images/acabaileScreenshot (1).png",
+                "./assets/images/acabaileScreenshot (2).png",
+                "./assets/images/acabaileScreenshot (3).png",
+                "./assets/images/acabaileScreenshot (4).png",
+                "./assets/images/acabaileScreenshot (5).png",
+                "./assets/images/acabaileScreenshot (6).png"
+            ],
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "UI/UX design",
+                "Webpage design",
+                "Figma"
+            ],
+            "prototype": "https://www.figma.com/proto/1ztO8nYy1Gw1wmRhf7mIQY/Prototipo-2?type=design&node-id=3-8&t=LuoEG4eEyQycYX9R-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A8&mode=design"
+        },
+        {
+            "title": "Mobile app prototype",
+            "image": "./assets/images/happydogs1.png",
+            "carousel": [
+                "./assets/images/happydogs1.png"
+            ],
+            "objectives": [],
+            "results": [],
+            "features": [],
+            "challenges": [],
+            "learnt-lessons": [],
+            "skills": [
+                "UI/UX design",
+                "App design",
+                "Figma"
+            ],
+            "prototype": "https://www.figma.com/proto/86Zgq9ki4Wc7pzg5Ii3PQS/P4-iteracion2?type=design&node-id=54750-3016&t=OjMpMoYnl43DaVd1-1&scaling=scale-down&page-id=11%3A1833&starting-point-node-id=54918%3A5573&mode=design"
+        },
+        {
             "title": "Google Calendar Report",
+            "show": false,
             "image": "./assets/images/calendar-report.png",
-            "carousel": ["./assets/images/calendar-report.png"],
+            "carousel": [
+                "./assets/images/calendar-report.png"
+            ],
             "description": "Developed a solution using Python, Google API, and Power BI to automate the extraction and visualization of Google Calendar events. The project aimed to provide insights into the time spent on different activities and improve time management.",
             "skills": [
                 "Python",
@@ -155,13 +527,6 @@
                 "Google Calendar API",
                 "PowerBI"
             ]
-        },
-        {
-            "title": "EA FC 25 squad builder (using ILP)",
-            "image": "./assets/images/eafc25-1.png",
-            "carousel": ["./assets/images/eafc25-1.png"],
-            "description": "Developed and solved and optimizacion problem to choose the best squad for EA FC 25 Ultimate Teams, given price and chemistry constraints.",
-            "skills": ["Integer and Linear Programming", "AMPL", "Python"]
         }
     ],
     "footer": {

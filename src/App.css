@@ -1,21 +1,31 @@
 :root {
   /* Primary Colors */
-  --color-primary: #1E3A8A;       /* Deep Blue */
-  --color-primary-light: #0899f4; /* Brighter Blue for hover/accents */
-  --color-secondary: #23d5ab;     /* Green accent */
-  --color-accent: #FACC15;        /* Yellow highlight */
+  --color-primary: #1E3A8A;
+  /* Deep Blue */
+  --color-primary-light: #0899f4;
+  /* Brighter Blue for hover/accents */
+  --color-secondary: #23d5ab;
+  /* Green accent */
+  --color-accent: #FACC15;
+  /* Yellow highlight */
 
   /* Background & Surface */
-  --color-bg: #F9FAFB;            /* Light gray background */
-  --color-card-bg: #FFFFFF;       /* White card background */
+  --color-bg: #F9FAFB;
+  /* Light gray background */
+  --color-card-bg: #FFFFFF;
+  /* White card background */
 
   /* Text */
-  --color-text: #111827;          /* Dark gray / black for main text */
-  --color-subtext: #6B7280;       /* Medium gray for secondary info */
-  --color-text-inverse: #FFFFFF;  /* White text for dark backgrounds */
+  --color-text: #111827;
+  /* Dark gray / black for main text */
+  --color-subtext: #6B7280;
+  /* Medium gray for secondary info */
+  --color-text-inverse: #FFFFFF;
+  /* White text for dark backgrounds */
 
   /* Border / Divider */
-  --color-border: #E5E7EB;        /* Light gray for borders */
+  --color-border: #E5E7EB;
+  /* Light gray for borders */
 
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -31,26 +41,35 @@ body {
   color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   font-family: var(--font-heading);
-  font-weight: 600; /* or 700 for bolder titles */
+  font-weight: 600;
+  /* or 700 for bolder titles */
   color: var(--color-text);
 }
 
-p, span, a, li {
+p,
+span,
+a,
+li {
   margin: 0;
   padding: 0;
   font-family: var(--font-body);
   font-weight: 400;
 }
 
-h3{
+h3 {
   line-height: 1.15;
 }
 
-h6{
+h6 {
   color: var(--color-subtext);
 }
 
@@ -58,7 +77,7 @@ h6{
 .button {
   background-image: linear-gradient(45deg, var(--color-secondary), var(--color-primary-light));
   color: var(--color-card-bg);
-  width: 30%;
+  width: 28%;
   padding: 0.4rem 0.25rem;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -66,6 +85,15 @@ h6{
   cursor: pointer;
   text-align: center;
   border: 1px solid var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  gap: 0.25em;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wider {
+  width: 35%;
 }
 
 .button:hover {
@@ -77,30 +105,30 @@ h6{
   background-color: #1E3A8A;
 }
 
-.labels-container{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+.labels-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .label {
-  background-color: #E5E7EB; /* light gray */
-  color: #6B7280; /* subtext gray */
+  background-color: #E5E7EB;
+  /* light gray */
+  color: #6B7280;
+  /* subtext gray */
   padding: 0.1rem 0.5rem;
   border-radius: 0rem;
   font-weight: 500;
 }
 
 
-.project-card-image{
-    border-radius: 1rem;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+.project-card-image {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
-
-

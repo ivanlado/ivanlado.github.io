@@ -15,7 +15,7 @@ function AcademicBg({
             <div className="home-card-container">
                 {data.education.map((edu, index) => {
                     return (
-                        <div key={index} className="home-card">
+                        <div key={index} className="home-card home-card-academic-bg">
                             <h3>{edu.degree}</h3>
                             <h6>
                                 {edu.institution +
@@ -37,20 +37,25 @@ function AcademicBg({
                                             <ul>
                                                 {edu.details.map((detail, i) =>
                                                     typeof detail ===
-                                                    "object" ? (
+                                                        "object" ? (
                                                         <li key={i}>
                                                             <strong>
                                                                 {detail.title}
                                                             </strong>
                                                             :{" "}
-                                                            {detail.description}
-                                                            {detail.more && (
+                                                            {detail.description}{detail.more && (
                                                                 <>
                                                                     <button
-                                                                        className="button" style={{ width: "auto", padding: "0.15rem 0.5rem", borderRadius: "0.5rem", marginLeft: "0.25rem"}}
+                                                                        className="button" style={{
+                                                                            display: "inline",
+                                                                            marginLeft: "0.25rem",
+                                                                            padding: "0.15rem 0.75rem",
+                                                                            borderRadius: "0.5rem",
+                                                                            width: "auto",
+                                                                        }}
                                                                         onClick={() =>
                                                                             openModal(
-                                                                                data.projects[0]
+                                                                                data.projects[i]
                                                                             )
                                                                         }>
                                                                         More

@@ -12,11 +12,11 @@ function ProjectInfo({ modalProject, setModalProject, closeDialog }) {
         "learnt-lessons",
     ];
     const sectionsProjectsDisplay = {
-        objectives: "Objectives",
-        results: "Results",
-        features: "Features",
-        challenges: "Challenges",
-        "learnt-lessons": "Learned Lessons",
+        objectives: "🎯 Objectives",
+        results: "📊 Results",
+        features: "⚙️ Features",
+        challenges: "🧩 Challenges",
+        "learnt-lessons": "💡 Learned Lessons",
     };
     return (
         <div className="modal">
@@ -33,48 +33,55 @@ function ProjectInfo({ modalProject, setModalProject, closeDialog }) {
 
                 {/* Main Content */}
                 <div className="modal-body">
-                    <div className="carousel">
-                        {modalProject.carousel.length > 1 && (
-                            <button
-                                className="carousel-btn prev"
-                                onClick={() =>
-                                    setModalProject((prev) => ({
-                                        ...prev,
-                                        currentIndex:
-                                            (prev.currentIndex -
-                                                1 +
-                                                prev.carousel.length) %
-                                            prev.carousel.length,
-                                    }))
-                                }>
-                                ‹
-                            </button>
-                        )}
+                    {modalProject.carousel.length > 0 && (
+                        <div className="carousel">
+                            {modalProject.carousel.length > 1 && (
+                                <button
+                                    className="carousel-btn prev"
+                                    onClick={() =>
+                                        setModalProject((prev) => ({
+                                            ...prev,
+                                            currentIndex:
+                                                (prev.currentIndex -
+                                                    1 +
+                                                    prev.carousel.length) %
+                                                prev.carousel.length,
+                                        }))
+                                    }>
+                                    ‹
+                                </button>
+                            )}
 
-                        <img
-                            src={
-                                modalProject.carousel[modalProject.currentIndex]
+                            {
+                                modalProject.carousel.length >= 1 &&  (
+                                    <img
+                                        src={
+                                            modalProject.carousel[modalProject.currentIndex]
+                                        }
+                                        className="carousel-image"
+                                        alt={modalProject.title}
+                                    />
+                                )
                             }
-                            className="carousel-image"
-                            alt={modalProject.title}
-                        />
-                        {modalProject.carousel.length > 1 && (
-                            <button
-                                className="carousel-btn next"
-                                onClick={() =>
-                                    setModalProject((prev) => ({
-                                        ...prev,
-                                        currentIndex:
-                                            (prev.currentIndex + 1) %
-                                            prev.carousel.length,
-                                    }))
-                                }>
-                                ›
-                            </button>
-                        )}
-                    </div>
 
-                    <h4>Description</h4>
+                            {modalProject.carousel.length > 1 && (
+                                <button
+                                    className="carousel-btn next"
+                                    onClick={() =>
+                                        setModalProject((prev) => ({
+                                            ...prev,
+                                            currentIndex:
+                                                (prev.currentIndex + 1) %
+                                                prev.carousel.length,
+                                        }))
+                                    }>
+                                    ›
+                                </button>
+                            )}
+                        </div>
+                    )}
+
+                    <h4>📖 Description</h4>
                     <p>{modalProject.description}</p>
 
                     {sectionsProjects.map(
@@ -101,7 +108,7 @@ function ProjectInfo({ modalProject, setModalProject, closeDialog }) {
                                 ))
                     )}
 
-                    <h4>Skills</h4>
+                    <h4>🛠️ Skills</h4>
                     <div className="labels-container">
                         {modalProject.skills.map((skill, i) => (
                             <div key={i} className="label">
