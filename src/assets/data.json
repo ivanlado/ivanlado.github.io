@@ -76,8 +76,7 @@
             "startDate": "September 2025",
             "endDate": "February 2026",
             "logo": "./assets/images/inditex_logo.jpg",
-            "description": "Doing my master's thesis: Retail process analysis and forecasting using statistical and machine learning methods.",
-            "responsibilities": [],
+            "responsibilities": ["Doing my master's thesis: Retail process analysis and forecasting using statistical and machine learning methods.", "Developed a simple model to forecast discounted sales during the first two weeks of sales periods."],
             "skills": [
                 "Machine Learning",
                 "Bussiness Analysis",
