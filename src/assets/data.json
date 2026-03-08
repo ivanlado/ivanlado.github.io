@@ -59,7 +59,7 @@
             "endDate": "February 2026",
             "credits": "90 credits ECTS",
             "gpa": "9.30/10",
-            "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, or spatial statistics.",
+            "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, spatial statistics, machine learning, operations research and financial engineering.",
             "details": [
                 {
                     "title": "Master Thesis: Analysis of retail processes and diagnosis of coordinated forecasting needs, at Inditex",
@@ -78,13 +78,12 @@
             "logo": "./assets/images/inditex_logo.jpg",
             "responsibilities": ["Doing my master's thesis: Retail process analysis and forecasting using statistical and machine learning methods.", "Developed a simple model to forecast discounted sales during the first two weeks of sales periods."],
             "skills": [
-                "Machine Learning",
-                "Bussiness Analysis",
+                "Business Analysis",
                 "Statistics",
                 "Snowflake",
                 "Databricks",
-                "Python",
-                "PySpark"
+                "PowerBI",
+                "PySpark", "Python"
             ]
         },
         {
@@ -175,6 +174,36 @@
         }
     ],
     "projects": [
+        {
+            "title": "🧠 bREIIn — Your Digital Second Brain",
+            "image": "./assets/images/bREEIn/main.png",
+            "repo": "https://github.com/efds24/bREIIn",
+            "carousel": [
+                "./assets/images/bREEIn/main.png", "./assets/images/bREEIn/inbox.png", "./assets/images/bREEIn/inbox_upload.png", "./assets/images/bREEIn/list.png", "./assets/images/bREEIn/graph.png", "./assets/images/bREEIn/chat.png"
+            ],
+            "description": "bREEIn was the proposed solution for the Kelea challenge at 2026 HackUDC. bREIIn is an open-source personal knowledge management platform that ingests, classifies, connects, and lets you query all kinds of content (documents, audio, web links, YouTube videos, text notes) using artificial intelligence. Think of it as a second brain that not only stores your information but understands and relates it.",
+            "features": [
+                "📄 Multi-format ingestion supporting PDFs, DOCX, TXT, Markdown, CSV, PPTX, audio files (MP3, WAV, M4A), YouTube links, web pages, and free text",
+                "🎙️ Local transcription of audio using faster-whisper ensuring 100% private processing without external APIs",
+                "🌐 Automatic extraction and summarization of web pages using scraping techniques and the LexRank algorithm via the Sumy library",
+                "🧠 Automatic generation of a knowledge graph in Neo4j capturing semantic, thematic, and temporal relationships",
+                "🔍 Semantic search using embeddings generated with Google GenAI and vector similarity search in Qdrant",
+                "💬 RAG chatbot for question answering over documents using retrieval-augmented generation with Ollama-based LLMs",
+                "📊 Interactive dashboard featuring topic-based card views and a 3D semantic graph with semantic zoom (level of detail)",
+                "🔌 Chrome extension for saving web links directly from the browser with a single click",
+                "🔒 Security features including API key authentication, SSRF protection, restrictive CORS policies, security headers, and non-root containers",
+                "🚀 Production-ready architecture with multi-stage Docker builds, CI/CD via Cloud Build, and deployment on Google Cloud Run"
+            ],
+            "skills": [
+                "LLMs",
+                "RAG",
+                "FastAPI",
+                "Neo4j",
+                "MongoDB",
+                "FastAPI",
+                "React"
+            ]
+        },
         {
             "title": "Efficient semantic segmentation of land cover images using an encoder-decoder architecture",
             "image": "./assets/images/tfg-info-1.png",
