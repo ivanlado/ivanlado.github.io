@@ -24,9 +24,10 @@ function AcademicBg({
                                     " - " +
                                     edu.endDate +
                                     " | " +
-                                    edu.credits +
-                                    " | GPA: " +
-                                    edu.gpa}
+                                    edu.credits
+                                    // " | GPA: " +
+                                    // edu.gpa
+                                    }
                             </h6>
                             <div className="home-card-details">
                                 {edu.details && (
