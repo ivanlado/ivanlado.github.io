@@ -24,7 +24,7 @@
     "profile": {
         "name": "Iván Lado Canosa",
         "title": "Informatics Engineering and Mathematics graduate",
-        "subtitle": "Master in Statistical Techniques student",
+        "subtitle": "Data Analyst at Inditex",
         "image": "images/me-big.jpg",
         "resume": "docs/resume.txt"
     },
@@ -56,7 +56,7 @@
             "degree": "Masters's degree in Statistical Methods",
             "institution": "Universidade da Coruña, Spain",
             "startDate": "September 2024",
-            "endDate": "February 2026",
+            "endDate": "September 2026",
             "credits": "90 credits ECTS",
             "gpa": "",
             "description": "Delving deeper into statistics and probability foundations, statistical inference, regression models, survival analysis, stochastic processes, optimization techniques, time series, spatial statistics, machine learning, operations research and financial engineering.",
@@ -70,11 +70,34 @@
     ],
     "experience": [
         {
-            "title": "Data Scientist Intern",
+            "title": "Data Analyst",
+            "position": "Data Analyst",
+            "company": "Inditex",
+            "startDate": "April 2026",
+            "endDate": "Present",
+            "logo": "./assets/images/inditex_logo.jpg",
+            "responsibilities": [
+                "Store Operations team: operational processes of Zara's physical stores.",
+                "Maintain and improve the operational workload model: tracking of units handled per process and estimation of process productivity.",
+                "Impute missing fitting-room antenna readings (stores without sensors or with faulty ones) using GLMs and other interpretable statistical models.",
+                "Quantify the productivity impact of process improvements and communicate the results to business stakeholders to support operational decision-making.",
+                "Act as the link with the HR department on Smart Planning, shaping operational rules on workload and staffing (coverage minimums, task priorities) into the productivity figures and constraints the planning engine runs on."
+            ],
+            "skills": [
+                "Business Analysis",
+                "Statistical Modelling (GLMs)",
+                "Python",
+                "SQL",
+                "Snowflake",
+                "Databricks"
+            ]
+        },
+        {
+            "title": "Data Analyst / Data Scientist Intern",
             "position": "Intern",
             "company": "Inditex",
             "startDate": "September 2025",
-            "endDate": "February 2026",
+            "endDate": "April 2026",
             "logo": "./assets/images/inditex_logo.jpg",
             "responsibilities": ["Doing my master's thesis: Retail process analysis and forecasting using statistical and machine learning methods.", "Developed a simple model to forecast discounted sales during the first two weeks of sales periods."],
             "skills": [
