@@ -10,7 +10,13 @@ function Experience({ data, modalProject, setModalProject, openModal, closeDialo
             <div className="home-card-container">
                 {experience.map((exp, index) => {
                     return (
-                        <div key={index} className="home-card">
+                        <div
+                            key={index}
+                            className={
+                                exp.endDate === "Present"
+                                    ? "home-card home-card-current"
+                                    : "home-card"
+                            }>
                             <div className="home-card-title-with-image">
                                 <img src={exp.logo} className="home-logo"></img>
                                 <div className="home-card-title-text">

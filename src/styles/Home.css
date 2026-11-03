@@ -46,6 +46,12 @@
   max-width: none;
 }
 
+/* current job: takes a full row instead of a grid slot */
+.home-card-current {
+  flex-basis: 100%;
+  max-width: none;
+}
+
 /* gradient border using pseudo-element */
 .home-card::before {
   content: "";

@@ -275,33 +275,43 @@
                 "./assets/images/cars/bajas.png",
                 "./assets/images/cars/bajas-detail.png"
             ],
-            "description": "Censo Motor is a public web dashboard about the Spanish car fleet built from the official DGT (Dirección General de Tráfico) microdata. It shows new car registrations and deregistrations month by month: best-selling and fastest-falling makes and models, fuel and electrification trends, market share, and how likely each make and model is to be definitively deregistered before a given age. It runs as a static site with no backend: a monthly Python pipeline turns the raw DGT files into small Parquet aggregates, and the browser queries them with DuckDB-WASM.",
-            "objectives": [
-                "Turn the raw monthly DGT microdata (fixed-width text files) into an easy-to-read public dashboard",
-                "Offer reliable make and model figures despite the inconsistent names in the official registry",
-                "Keep hosting free and simple with a static site and no backend"
-            ],
+            "description": "Public dashboard of new car registrations and deregistrations in Spain, built from the official DGT microdata. A monthly Python pipeline cleans the data and builds Parquet aggregates that the browser queries with DuckDB-WASM, with no backend.",
             "features": [
-                "📥 Idempotent pipeline that downloads every monthly registrations and deregistrations file from the DGT, converts it to Parquet and keeps only passenger cars",
-                "🧹 Make and model cleaning against a scraped catalog (exact, prefix and fuzzy matching with rapidfuzz, plus hand-written regex rules), leaving only about 1 % of cars unidentified",
-                "🦆 DuckDB aggregates served as small Parquet files and queried in the browser with DuckDB-WASM",
-                "📊 Altas section: KPIs, top 10 sales and drops, fuel and electrified (HEV, PHEV, BEV) trends, market share winners and losers, and a make/model detail table",
-                "📉 Bajas section: share of new cars definitively deregistered before 1 to 10 years of age, by make and model",
-                "🔎 Static SEO pages generated at build time (electric cars and top 10 makes), sitemap and Search Console setup",
-                "📝 Spec-driven development: a written dashboard spec and design system are the source of truth for every feature"
-            ],
-            "challenges": [
-                "Messy make and model names in the registry, which required a combination of automatic matching and manual decisions that are never overwritten",
-                "Months missing from the DGT server, which must be shown as missing data instead of zero"
+                "📊 Sales by make and model, fuel and electrification trends and market share",
+                "📉 Share of cars definitively deregistered by age, per make and model",
+                "🧹 Make and model cleaning with fuzzy matching: about 1 % of cars left unidentified"
             ],
             "skills": [
                 "Python",
                 "DuckDB",
-                "Pandas",
                 "Data cleaning",
                 "React",
-                "ECharts",
-                "Data visualization"
+                "ECharts"
+            ]
+        },
+        {
+            "title": "📈 Stock Alerts — Daily stock screener and alerts",
+            "image": "./assets/images/stock-alerts/main.png",
+            "live": "https://ivanlado.github.io/stock-alerts/",
+            "repo": "https://github.com/ivanlado/stock-alerts",
+            "carousel": [
+                "./assets/images/stock-alerts/main.png",
+                "./assets/images/stock-alerts/analyst.png",
+                "./assets/images/stock-alerts/drops.png",
+                "./assets/images/stock-alerts/search.png"
+            ],
+            "description": "Daily job that screens IBEX 35 and S&P 500 companies by fundamentals and flags opportunities: stocks trading well below the analysts' price target or after a sharp price drop. Runs on GitHub Actions, sends an email and publishes a dashboard.",
+            "features": [
+                "🔔 Two alert rules: gap to the analysts' target and price drops over several windows",
+                "🤖 LLM commentary and company profiles (via LiteLLM)",
+                "🔍 Search over ~540 stocks and index ETFs with fundamental filters"
+            ],
+            "skills": [
+                "Python",
+                "GitHub Actions",
+                "LLMs",
+                "React",
+                "TypeScript"
             ]
         },
         {
